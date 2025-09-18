@@ -1,0 +1,46 @@
+Agenda ===> job --> needs --> wwh 
+carriers oppo ==> 
+job ===> apti + dsa ( tcs , inf, oracle , ericson , google , meta , maang (meta(Microsoft), amazon , apple , Netflix , google) ===> hackerank , leetocode 
+2. technical + project + viva + programming round 
+3 . hr communication + GitHub + linkdin + leetcode 
+leetcode ==> programming skills + problem skills 
+
+1. oppor==>  full stack web dev ===> html + css + js ===> react js + angular js   
+software dev ==> backend ===> database(sql + mongo db + postgres sql) + java(springboot) + python (Django) + c#
+android dev ===> java + react native + kotlin 
+data analyst ===> sql(database) + ms excel +  power bi (Microsoft ) + python 
+data engineer ===> exctract + load ( etl stack + data bricks ) 
+qa ==> quality ===> python ( pipelines ) + java silenum 
+cloud eng ====> cloud ( machine (windows + Linux machine ) + aws + gcp + Microsoft + oracle (certification) + python (boto 3) 
+
+data scientist ===>  data analyst + enginner + ai / ml 
+power bi developer ( 5 -6 lpa) 
+
+
+python(flask) + java(jdbc + springboot  +  dsa 
+
+
+python ===> code 1 , 2 ===> github upload 
+
+Dev + ops(operations) ===> Linux 
+sdlc( software development life cycle) ===> waterfall 
+1. website flipkart ===> devops engineer 
+ code ==> frontend + backend (software enginner)----> qa ----> deploy( servers (cloud)) + 400gb===> flipkart big billion ( 500k )===> monitoring --> scale 
+e
+code -> qa --> deployment --> moniotoring ---> user need uss website 
+
+devops --> automate --> ci/cd/ct ==> deployement 
+
+pipeline ====> set task ===> enter 
+task 1 crome open 
+task 2 gmail kholni 
+task 3 mark as unread 
+
+linux ====> full control --> linux 
+userinterface ---> os ---> shell --> operations 
+terminal(windows , linux(subject) ---> shell 
+
+github / git ---> 
+
+docker ===> 10mb , 50mb , 100mb , 300mb ======> kubernetes ===> 
+hardware----> shell ---->                  
