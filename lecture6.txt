@@ -1,0 +1,46 @@
+#Type casting - converting one data type to another implicitly
+#Note - Its not possible to add one datatype to another datatype, in any of the case if its happening then its because of implicit type-casting
+#a = 10
+#b = 20.5
+#c = [1,2,3,4,5]
+#d = (1,2,3,4,5)
+#b = int(b)
+#x = "30"
+#print(c, type(c), d, type(d))
+#z = c+d/a+b #implicit conversion
+#print(z, type(z))
+#z = a+x
+#print(z, type(z))
+#c = int(x) #explicit conversion
+#print(type(c), c)
+#a = True #1
+#b = False #0
+#c = 10
+#d = c+a #implicit conversion
+#e = 10.9
+#f = e+a #implicit conversion
+#print(d, type(d))
+#print(f, type(f))
+#print(a, type(a))
+#shallow copy - creates a new object that references the original object
+#-------------------------------------------------------------------------------------------
+#Explicit type conversion
+#a = int(10) #explicit conversion
+#b = int(20.500000000) #explicit conversion
+#c = int(3*2.99903) #explicit conversion
+#a1 = 10
+#a1 = 20
+#a1 = 30
+#a1 = 40
+#print(type(a), a)
+#print(type(b), b)
+#print(type(c), c)
+#print(type(a1), a1)
+#a = 'Hello World Hello World'
+#print(a, type(a))
+#b = list(a)
+#c = tuple(a)
+#d = set(a)
+#print(b, type(b), len(b))
+#print(c, type(c))
+#print(d, type(d))

@@ -1,0 +1,30 @@
+#Tuples - ordered collection of items enclosed in parentheses, immutable, allows duplicate elements
+#my_tuple = (1, 2.5, "Hello", True, 2, "Raghav", 2, 2.5)
+#my_tuple2 = 1, 2.5, "Hello", True, 2, "Raghav" #parentheses are optional
+#my_tuple3 = (1,) #single element tuple, comma is mandatory
+#my_tuple4 = () #empty tuple
+#print(my_tuple, type(my_tuple), len(my_tuple))
+#print(my_tuple[2]) #accessing tuple elements
+#print(my_tuple[1:5])
+#print(my_tuple[2:])
+#print(my_tuple*2)
+#print(my_tuple + my_tuple3)
+#print(type(my_tuple2))
+
+
+#Range - generates a sequence of numbers, commonly used in for loops
+#m = range(10) #start, stop, step
+#print(m)
+#print(type(m))
+
+
+#for i in range(15): #start - by default 0, stop - n-1, step - by default 1
+#    print(i+1,"Hello World")
+
+
+#ASCII Values - American Standard Code for Information Interchange, 0 255
+#Binary data types - bytes, bytearray, memoryview
+#1. bytes - immutable sequence of bytes, used to store binary data
+#b = bytes([54, 66, 67, 68, 90]) #list of integers
+#print(b, type(b))
+#print(ord('[')) #ASCII value of character

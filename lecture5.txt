@@ -1,0 +1,62 @@
+#print(sum(a)) #sum of elements in the list
+#a = [2,2,2,2,22,2,2,2,2,2]
+#b = (2,2,2222,2,2,22,2,2,2,2)
+#c = {2,2,2,2,2,2,2,2,2,2}
+#print(a)
+#print(b)
+#print(c)
+#a[2] = "Hello" #mutable
+#b[2] = "Hello"  immutable
+#print(a)
+#print(b)
+#------------------------------------------------------------------------------
+#Set - unordered collection of unique items enclosed in curly braces, mutable, no duplicate elements
+#s = {1, 2.5, "Hello", False, 5+6j, 1.23E-4, 1, 2.5, "Hello"}
+#print(s, type(s))
+#Hashing  2d -
+#li = [1,2,3,[1,2,3,"Four", [11,12,13]], [2,5], "Hello", False]
+#print(li[4])
+#s = {[1,2,3, "Four"], 2.5, "Hello", False, 5+6j, 1.23E-4, 1, 2.5, "Hello", (1,2, "Three")}
+#s = {1,2,3,4,5,567,7,5,8,7,8,9,0}
+#s[2] = int(10)
+#print(s, type(s))
+#-----------------------------------------------------------------------------
+#Dictionary - unordered collection of key-value pairs enclosed in curly braces, mutable, keys must be unique and immutable
+#udhaar = {1:"Yashika", 2: "Raghav", 3:"Tiwari", 4:"Shubham", 5:"Ankit", "Six":"Aman"}
+#print(udhaar, type(udhaar))
+#print(udhaar['Six']) #accessing value using key
+#print(udhaar.keys()) #list of keys
+#print(udhaar.values()) #list of values
+#print(udhaar.items()) #list of key-value pairs
+#udhaar[4] = "Chotu" #modifying value using key
+#print(udhaar)
+#shallow copy - creates a new dictionary that references the original dictionary
+#deep copy - creates a new dictionary that is a copy of the original dictionary and does not reference the original dictionary
+
+
+#---------------------------------------------------------------------------------------
+#Boolean - bool - True or False
+#print(type(True))  #bool
+#print(type(False)) #bool
+#x = 10
+#y = 20
+#print(x > y)  #False
+#print(x < y)  #True
+#print(x == y) #False
+#print(x != y) #True
+#x = None
+#print(type(x)) #NoneType
+#print(x is None) #True
+#print(x)
+#---------------------------------------------------------------------------------
+#Type conversion - converting one data type to another
+#a = int(10) #explicit conversion
+#b = int(20.5) #explicit conversion
+#x = str(30)
+#print(type(x))
+#c = int(x) #explicit conversion
+#print(type(c), c)
+#print(c)
+
+
+#Do for float and string value
