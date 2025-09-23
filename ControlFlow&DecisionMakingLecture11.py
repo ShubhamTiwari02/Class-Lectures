@@ -47,4 +47,14 @@ print("Dude, you did a great job!")'''
 char = input("Enter a character: ")
 print(checkvowel(char))'''
 
+x = int(input("Enter a number:")) #decimal to binary, octal, hexadecimal
+if x < 100:
+    for i in range(1, 11):
+        print(f"{x}*{i} = {x*i}")
+else:
+    for i in range(1,11):
+        print("you can select only these numbers:",i)
 
+print("Your number is not upto the marks")
+for i in range(1,6):
+    print(f"{i}. you skipped the table of", x)
