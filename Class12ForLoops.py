@@ -31,12 +31,14 @@ Readability counts.
 #    if i not in "aeiouAEIOU": #If it returns True, it will print the consonants
 #        print(i, end="")
 
-#-----------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------
 #Loop for tuple
-#sum_tuple = (5, 26, 32, 44, 58, 43, 78, 90, 11, 23)
+#sum_tuple = (5, 26, 32, 44, 58, 43, 78, 90, 11, 23, 40, 50)
+#sum_t = tuple(int(i) for i in input("Enter numbers separated by space: ").split()) #lambda function
+#print(sum_t)
 #total = 0
 #for i in sum_tuple:
-#    print(i, total, sep="->")
+    #print(i, total, sep="->")
 #    total = total + i #5----------------------------------
     #print(i, total, sep="->")
 
@@ -49,7 +51,7 @@ Readability counts.
 #    else:
 #        print(i, "is odd")
 
-#for i in range(10):
+#for i in range(10): #single argument - it takes it as stop, start = 0, step = 1
 #    print(i)
 
 #for i in range(10,20):
@@ -59,3 +61,26 @@ Readability counts.
 #    print("Hello")
 
 #print("Program ends here")
+
+#for i in range(1, 10, 2): #single argument - stop, start - 0, step - 1
+#    print(i) #1 to 9
+
+#for i in range(11, 21, 2): #single argument - stop, start - 0, step - 1
+#    print(i) #1 to 9
+
+#numbers = {10:"Ten", 20:"Twenty", 30:"Thirty", 40:"Forty", 50:"Fifty"}
+#a = numbers.items()
+#numbers.get(10) #accessing value using key
+#for i in numbers.values():
+#    print(i)
+even_li = []
+odd_li = []
+for i in range(1, 101): #1 to 100
+    if i % 2 == 0:
+        even_li.append(i)
+    else:
+        #print(i, "is odd")
+        odd_li.append(i)
+
+print("Even numbers are:", even_li)
+print("Odd numbers are:", odd_li)
