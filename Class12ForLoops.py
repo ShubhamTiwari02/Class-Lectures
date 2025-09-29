@@ -73,14 +73,59 @@ Readability counts.
 #numbers.get(10) #accessing value using key
 #for i in numbers.values():
 #    print(i)
-even_li = []
-odd_li = []
-for i in range(1, 101): #1 to 100
-    if i % 2 == 0:
-        even_li.append(i)
-    else:
-        #print(i, "is odd")
-        odd_li.append(i)
+#even_li = []
+#odd_li = []
+#for i in range(1, 101): #1 to 100
+#    if i % 2 == 0:
+#        even_li.append(i)
+#    else:
+#        #print(i, "is odd")
+#        odd_li.append(i)
 
-print("Even numbers are:", even_li)
-print("Odd numbers are:", odd_li)
+#print("Even numbers are:", even_li)
+#print("Odd numbers are:", odd_li)
+#num = int(input("Enter a number to check prime or not: ")) #48371
+#for num in range(1, 101): #10
+#for i in range(2, num):  #50,000
+#    if (num % i) == 0:
+#        print(f"{num} % {i} = {num % i}")
+#        print(num, "is not a prime number")
+#        break  
+#else:
+#    print(num, "is a prime number")
+
+#range(start, stop, step)
+#------------------------------------------------------------------------------------------------
+#for else loop
+#if i has a factor greater than sqrt(i), the other factor must be less than sqrt(i)
+#So, we only need to check for factors from 2 to sqrt(i)
+
+
+#is_prime = True
+
+#i = int(input("Enter a number to check prime or not: ")) 
+#z = int(i**0.5)
+#for y in range(2, z+1): #checking divisibility from 2 to sqrt(x), y will be iterate from 2 to sqrt(x)
+#    if i % y == 0: #if the nuber is divisible by any number other than 1 and itself
+#        is_prime = False
+#        break
+#if is_prime:
+#    print(i, "is a prime number")
+#else:
+#    print(i, "is not a prime number")
+#num = input("Enter a number to write table: ")
+#for i in range(1, 11):
+    #print(f"{num}*{i} = {num*i}")
+#    print(f"{num*i}")
+#else:
+#    print("Table is completed here, now in else block")
+#print("Program ends here | End of for-else loop")
+
+li = [5, 26, 32, 44, 58, 43, 78, 90, 11, 23]
+for i in li:
+    print(i)
+    break
+else:
+    print("This is else block")
+
+print("Program ends here")
