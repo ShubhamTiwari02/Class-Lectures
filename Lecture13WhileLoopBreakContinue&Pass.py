@@ -83,3 +83,50 @@ for item in li:
         break
     print("Item is:", item)
 print("Loop ended")
+
+#---------------------------------------------------------------------------------
+user_name = input("Enter your username:")
+existing_user = ["Navya0", "Shubham1", "Kunal2", "Yash3", "Rohit4", "Sagar5", "Rajat6", "Ankit7"] #DB Query - list of existing usernames
+for checking_User in existing_user:
+    if user_name == checking_User:
+        print("Username already exists, please try again with a different username")
+        break #terminates the loop/session
+else:
+    print("Username is available | you can proceed with the registration")
+#--------------------------------------------------------------------------------------
+#Continue statement
+
+for letter in "PythonIsAmazingLanguagewhichisVeryEasyToLearnandUseGreatlyandAlsoVeryPowerful":
+    if letter == "A" or letter == "a":
+        print("Found an 'A' or 'a', skipping...")
+        continue #skips the current iteration
+    print(letter, end="-")
+
+#Pass statement
+#it is used to avoid getting errors when a statement is required syntactically but you do not want to
+#do anything
+
+#for letter in "PythonIsAmazingLanguagewhichisVeryEasyToLearnandUseGreatlyandAlsoVeryPowerful":
+for letter in "ABCDEFGHIJKLMNOP":
+    if letter == "D" or letter == "M":
+        pass #does nothing, avoids error
+        print("This is pass block, doing nothing for 'D' or 'M'")
+    print(letter)
+
+x = int(input("Enter a number:")) 
+
+if x%2 == 0:
+    pass
+else:
+    print("Its a odd number")
+
+while True:
+    print("Hello World")
+    pass
+
+#x = int(input("Enter a number:")) 
+
+#if x%2 == 0:
+#    ... #ellipses
+#else:
+#    print("Its a odd number")
