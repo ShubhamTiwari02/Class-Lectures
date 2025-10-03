@@ -130,3 +130,34 @@ while True:
 #    ... #ellipses
 #else:
 #    print("Its a odd number")
+
+#months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+#days = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday', 'Sunday']
+
+#for x in months:
+#    for y in days:
+#        print(x, y)
+
+#print("Happy new Year 2026")
+
+#i = 2
+#while i < 1001:
+#    for j in range(2, int(i**0.5)+1):
+#        if i % j == 0:
+#            break
+#    else:
+#        print(i, end=",")
+#    i += 1
+
+#i = 2
+#while i <= 1001:
+#    j = 2
+#    while j in range(2, int(i**0.5)+1):
+#        if i % j == 0:
+#            break
+#    else:
+#        print(i, end=",")
+#    i += 1
+
+
+
