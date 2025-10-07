@@ -25,3 +25,80 @@ printNameFunction("Sakshi") #function call with argument
 #printNameFunction("Ankit", "Good evening!") #function call with two arguments - will give error because function is defined with one parameter
 
 #greet() #function call
+
+#The term parameter and argument can be used fro the same thing, information that are passed into a function
+#From a function prospective:- 
+#Parameter - is a variable listed inside the parentheses in the function definition
+#Argument - value that is sent to the function when it is called
+
+#def kids_name(*kids): #Parameterized function with variable number of arguments
+#    print("Total number of kids:", len(kids)) #printing total number of arguments
+#    print("The youngest child is " + kids[len(kids)-1]) #accessing last element
+    #print("End of function") #printing all elements
+
+#kids_name("Shiwani", "Rohan", "Aarav", "Kabir") #function call with four arguments
+#kids_name("Kanish", "Rohan", "Kiara") #function call with three arguments
+#kids_name("Verma", "Sharma") #function call with one argument
+#kids_name("A", "B", "C", "D", "E", "F") #function call without argument - will not give error because parameter is variable number of arguments
+#kids_name() #function call without argument - will not give error because parameter is variable number of arguments
+
+#keyword arguments - arguments that are passed to a function by explicitly specifying the parameter name
+
+#def printInfo(name, age): #function with two parameters
+#    print("Name:", name)
+#    print("Age:", age)
+
+#printInfo(age=25, name="Yashika") #function call with keyword arguments
+#printInfo(name="Raghav", age=30) #function call with keyword arguments
+#printInfo("Shubham", 28) #function call with positional arguments
+#printInfo(32, "Aman") #function call with positional arguments
+
+#Call by value vs Call by reference
+#def add(): #function with two parameters
+#    a = int(input("Enter first number:")) #taking input from user
+#    b = int(input("Enter second number:")) #taking input from user
+#    print(a + b) #return statement - returns the value to the caller
+
+#add() #function call with arguments
+#Arbitrary arguments - *args (non-keyworded variable length arguments) and **kwargs (keyworded variable length arguments)
+
+def print_lastName(**p_info): #function with variable number of keyword arguments - **kwargs store all arguments in a dictionary
+    print("Total last name of the person is :", p_info["lastName"]) #printing total number of arguments
+
+print_lastName(lastName="Sharma", firstName="Yash", age=25, city="New Delhi", country="India", pinCode=110001) #function call with four keyword arguments
+print_lastName(firstName="Raghav", age=30, city="Mumbai", lastName="India", pinCode=400001) #function call with three keyword arguments
+print_lastName(lastName="Verma", firstName="Shubham") #function call with two keyword arguments
+#print_lastName() #function call without argument - will not give error because
+
+def kids_name(**kids): #Parameterized function with variable number of arguments
+    print("The youngest child is " + kids["youngest"]) #accessing last element
+    #print("End of function") #printing all elements
+
+kids_name(thirdYoungest="Shiwani", secondYoungest="Rohan", youngest="Aarav", fourthYoungest="Kabir") #function call with four arguments
+kids_name(youngest="Kanish", secondYoungest="Rohan", thirdYoungest="Kiara") #function call with three arguments
+kids_name(youngest="Verma", secondYoungest="Sharma") #function call with one argument
+kids_name(fourthYoungest="A", secondYoungest="B", thirdYoungest="C", youngest="D", fifthYoungest="E", sixthYoungest="F")
+
+#Return type - returns a value and exits the function
+def add(a, b):
+    return a + b 
+def sub(a, b):
+    return a - b
+def mul(a, b):
+    return a * b
+def div(a, b):
+    return a / b
+def mod(a, b):
+    return a % b
+
+a = int(input("Enter first number:"))
+b = int(input("Enter second number:"))
+c = 10
+d = 20
+addition = add(a, b)
+addition1 = add(c, d)
+addition2 = add(100, 200)
+
+print("Addition:", add(a, b))
+print("Addition1:", add(c, d))
+print("Addition2:", add(100, 200))
