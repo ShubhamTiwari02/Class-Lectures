@@ -98,7 +98,70 @@ d = 20
 addition = add(a, b)
 addition1 = add(c, d)
 addition2 = add(100, 200)
-
 print("Addition:", add(a, b))
 print("Addition1:", add(c, d))
 print("Addition2:", add(100, 200))
+print("Subtraction:", sub(a, b))
+print("Multiplication:", mul(a, b)) 
+
+def add(x, y):
+    pass
+def sub(x, y):
+    pass
+def mul(x, y):
+    pass  
+def div(x, y):
+    pass
+
+x = int(input("Enter first number:"))
+y = int(input("Enter second number:"))
+add(x, y)
+sub(x, y)
+mul(x, y)
+div(x, y)
+print("End of the program", x, y)
+#------------------------------------------------------------------------------------------
+def my_function(x,y,/): #positional only parameter
+    print(x**3)
+
+my_function(10, 5)
+my_function(x=10, y=5)
+#------------------------------------------------------------------------------------------
+def my_function(*, x, y): #keyword only parameter
+    print(x**3)
+    print(y**3)
+
+my_function(x=10, y=5)
+my_function(y=3, x=4)
+
+my_function(10, 5) #TypeError: my_function() takes 0 positional arguments but 2 were given
+
+#call func on a list
+#def recur_func(n):
+#    if n > 0:
+#        result = n + recur_func(n-1)
+#        print(result)
+#    else:
+#        result = 0
+#        print(result)
+#    return result
+
+#recur_func(5)
+#recur_func(3)
+#recur_func(10)
+#recur_func(15)
+
+#def factorial(n):
+#    if n == 0 or n == 1:
+#        return 1
+#    else:
+        #print(n)
+#        return n*factorial(n-1)
+    
+
+#print(factorial(10))
+#print(factorial(5))    
+#print(factorial(0))
+#print(factorial(1))
+#print(factorial(3))
+#print(factorial(4))
