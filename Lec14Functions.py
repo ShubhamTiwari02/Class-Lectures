@@ -165,3 +165,146 @@ my_function(10, 5) #TypeError: my_function() takes 0 positional arguments but 2 
 #print(factorial(1))
 #print(factorial(3))
 #print(factorial(4))
+
+def main(food):
+    for i in food:
+        print(i*2)
+
+#main(5)
+food = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+food1 = ["carrot", "potato", "cabbage", "onion", "spinach"]
+main(["sandwich", "burger", "pizza", "pasta", "salad"])
+main(food1)
+main(food)
+
+#Scope of variables - local, global and nonlocal
+#local variable - defined inside a function and can only be accessed inside that function
+#global variable - defined outside a function and can be accessed anywhere in the program
+#x = int(input("Enter a number: "))
+
+#def find_even_odd(num):
+#    print(f"The number {num} is being checked.")
+#    if num % 2 == 0:
+#       return "Even"
+#    else:
+#        return "Odd"
+
+#result = find_even_odd(x)
+#print(f"The number {x} is {result}.")
+
+#def my_function():
+#    a = 10
+#    b = 20
+#    print("Inside function:", a, b)
+#    return a + b
+
+#print("Outside function:", my_function())
+#print("Outside function:", a, b) #will give error because a and b are local variables - NameError: name 'a' is not defined
+
+#Nonlocal variable - defined inside a nested function and can be accessed in the nested function
+
+#x = int(input("Enter a number: "))
+#def your_A_and_B():
+#    a = 10
+#    b = 20
+#    def my_A_and_B():
+#        nonlocal a, b
+#        a = 30
+#        b = 40
+#        print("Inside inner function:", a+b+x)
+#        return a + b + x
+
+
+#    print("After inner function call:", my_A_and_B())
+#print("After outer function call:", your_A_and_B())
+#print("Outside function:", a, b) #will give error because a and b are local variablesprint(global()) #will give all global variables
+#print(globals()) #will give all global variables
+
+
+name = "Shivam Kumar"
+marks = 90
+result = True
+
+def myfunction():
+    a = 10
+    b = 20
+    c = a+b
+    print(globals())
+    print(locals())
+    return c 
+    
+
+print(myfunction())
+
+name = "Akash"
+marks = 90
+result = True
+
+def myfunction():
+    a = 10
+    b = 20
+    c = a+b
+    print(globals())
+    print(locals())
+    print(globals()['name'])
+    print(globals().get('marks'))
+    print(locals().get('a'))
+    print(locals()['b'])
+    return c 
+
+print(myfunction())
+
+#Namespace conflict - if variable with same name in local and global, then interpreter gives priority to local Namespace
+marks = 50 #this is a global variable
+def myfuction():
+    marks = 70
+    print(marks) #this is a local variable
+    
+myfuction()
+print(marks)
+
+#Manupulation of a global variable inside a function is not allowed when you are not redefining the variable
+marks = 50 #this is a global variable
+def myfuction():
+    #marks = 70
+    marks = marks + 20
+    print(marks) #this is a local variable
+    
+myfuction()
+print(marks)
+
+#Option 1
+#Manupulation of a global variable inside a function is allowed only when you are defining inside a function with keyword "global"
+marks = 50 #this is a global variable
+def myfuction():
+    global marks
+    marks = marks + 20
+    print(marks) #this is a local variable
+    print(globals())
+    
+myfuction()
+print(marks)
+
+#Option 2
+#Manupulation of a global variable inside a function is allowed only when you are defining inside a function with keyword "global"
+marks = 50 #this is a global variable
+def myfuction():
+    globals()['marks'] = globals()['marks']+20
+    print(marks) #this is a local variable
+    #print(globals())
+    
+myfuction()
+print(marks)
+
+#NameError - if variable is defined inside a function and trying to access outside the function
+var1 = 30
+var2 = 50
+
+def myfunction(var1, var2):
+    total = var1+var2
+    print("Total is:-", total)
+    
+myfunction(var1, var2)
+
+print(total)
+
