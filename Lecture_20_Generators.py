@@ -85,3 +85,34 @@ fib_gen = fibonacci_generator()
 for _ in range(20):
     print(next(fib_gen))
 #-------------------------------------------------------------------------------------------
+#close() - this method is use to stop the generator
+
+def my_gen():
+    yield 1 
+    yield 2
+    yield 3
+    yield 4
+    yield 5
+    
+gen = my_gen()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+gen.close()
+print(next(gen))
+
+#Send() - it allows you to send data(a value) to the generator
+def echo_generator():
+    while True:
+        got_value = yield
+        print("The value is:-", got_value)
+
+gen = echo_generator()
+next(gen)
+gen.send("Raghav")
+gen.send("Akash")
+gen.send("kunal")
+gen.send("Sharma")
+gen.send(10)
+
+#print(id(Shubham))
