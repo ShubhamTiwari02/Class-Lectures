@@ -74,3 +74,30 @@ for i in s:
 
 lc = [char for char in s if char not in "aeiouAEIOU" if char != " " and char != "," and char != "."]
 print(lc)
+
+#Tuples
+a = (1, 2, 3, 4, 6, 7, 8, 9, 10, 6, 7, 8, 9, 10, 2 ,2 ,3 ,4 ,5, 30, 0)
+b = ("Apple", "Banana", "Cherry", "Mango")
+#a.append(6)  # This will raise an AttributeError since tuples are immutable
+#a[2] = 10  # This will raise a TypeError since tuples do not support item assignment
+#a.pop()  # This will raise an AttributeError since tuples do not have a pop method
+#------- you have to change a value in a tuple by converting it to a list and back to a tuple -------
+#temp = list(a)
+#temp.pop(0)
+#temp.remove(1)
+#temp.pop()
+#temp.append("Apple")
+#temp.append(7)
+#temp[5] = 10
+#a = tuple(temp)
+#del a # deleting the entire tuple
+#c = a + b # concatenation - Adds two tuples and creates a new tuple
+#print(c)
+#print(type(c))
+#z = a.count(30)  # counts the number of occurrences of a value
+#z1 = a.index(5)  # returns the index of the first occurrence of a value
+#x = max(a)  # returns the maximum value
+#y = min(a)  # returns the minimum value
+#z = len(a)  # returns the length of the tuple
+#f = sum(a)  # returns the sum of all elements in the tuple
+#print(x, y, z, f)
