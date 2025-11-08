@@ -129,3 +129,27 @@ print("Joined array using append() in a loop:", arr)
 #3. Using extend() method
 arr.extend(arr3)
 print("Joined array using extend() method:", arr)
+
+#1. append() method, extend() method, insert() method, remove() method, pop() method, del statement
+a = arr.buffer_info()
+b = arr1.buffer_info()
+print(a[0], a[1])  # prints: address of the array and number of elements in the array
+print(b[0], b[1])  # prints: address of the array and number of elements in the array
+arr.reverse()  # reverses the array
+print(arr)
+
+# 1. buffer_info() method
+print(arr.buffer_info())
+print(arr1.buffer_info())
+
+# 2. count() method
+print(arr.count(400))
+
+# 3. index() method
+x = arr.index(71, 0, 7)
+print(x)
+
+#------------------------------ Array through a list ------------------------------
+list1 = [1, 2, 3, 4, 5]
+arr.fromlist(list1)
+print(arr)
