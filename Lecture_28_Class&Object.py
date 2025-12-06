@@ -59,3 +59,70 @@ print(Employee.__dict__)
 #delattr(e4, 'position')  # Delete attribute 'position' of e4
 #e5.display_info()
 
+class Sample:
+    __hidden_variable = 0  
+    def count(self):
+        self.__hidden_variable += 1
+        return self.__hidden_variable
+    
+s1 = Sample()
+s2 = Sample()
+print(s2.count())  # Output: 1
+print(s2.count())  # Output: 2
+print(s1.count())  # Output: 1
+print(s2.count())  # Output: 3
+#print(s1._Sample__hidden_variable)
+print(s1.__hidden_variable)
+print(s1.hidden_variable)
+
+# # class Point:
+# #     def __init__(self, x=0, y=0):
+# #         self.x = x
+# #         self.y = y
+
+# #     def display(self):
+# #         print(f"Point({self.x}, {self.y})")
+
+# #     def __del__(self):
+# #         class_name = self.__class__.__name__
+# #         print(f"{class_name} object is being destroyed")
+
+# # p1 = Point()
+# # p2 = p1
+# # p3 = p2
+# # print(id(p1), id(p2), id(p3))
+# # del p1
+# # del p2
+# # del p3
+# # print(id(p1))
+
+# #Data Hiding
+# class BankAccount:
+#     def __init__(self, account_number, balance):
+#         self.__account_number = account_number  # Private attribute
+#         self.__balance = balance  # Private attribute
+
+#     def deposit(self, amount):
+#         if amount > 0:
+#             self.__balance += amount
+#             print(f"Deposited: ${amount}")
+#         else:
+#             print("Deposit amount must be positive")
+
+#     def withdraw(self, amount):
+#         if 0 < amount <= self.__balance:
+#             self.__balance -= amount
+#             print(f"Withdrew: ${amount}")
+#             print(f"your account number {self.__account_number} has been debited by {amount}")
+#             print(f"New balance: ${self.__balance}")
+#         else:
+#             print("Insufficient funds or invalid withdrawal amount")
+
+#     def get_balance(self):
+#         print(f"Balance: ${self.__balance}")
+    
+# b1 = BankAccount("123456789", 1000)
+# #b1.withdraw(200)
+# #b1.deposit(500)
+# #b1.get_balance()
+# print(b1.account_number)  # Accessing private attribute (not recommended)
