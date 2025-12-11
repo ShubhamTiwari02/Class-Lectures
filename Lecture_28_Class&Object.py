@@ -126,3 +126,123 @@ print(s1.hidden_variable)
 # #b1.deposit(500)
 # #b1.get_balance()
 # print(b1.account_number)  # Accessing private attribute (not recommended)
+#----------------------------------------------------------------------------------------------
+
+# class Sample:
+#     __hidden_variable = 0  
+#     def count(self):
+#         self.__hidden_variable += 1
+#         return self.__hidden_variable
+    
+# s1 = Sample()
+# s2 = Sample()
+# print(s2.count())  # Output: 1
+# print(s2.count())  # Output: 2
+# print(s1.count())  # Output: 1
+# print(s2.count())  # Output: 3
+# #print(s1._Sample__hidden_variable)
+# print(s1.__hidden_variable)
+# print(s1.hidden_variable)
+
+# class Employee:
+#     name = "Akash"
+#     age = 30
+
+# class Employee1:
+#     name = "Raghav"
+#     age = 25
+
+# e1 = Employee()
+# e2 = Employee1()
+# print(e1.name, e2.name)
+# print(e1.age, e2.age)
+
+# class Employee:
+#     empcount = 5 #Class attributes
+#     def __init__(self, name = "Akash", age = 500): #Instance attributes
+#         self.name = name
+#         self.age = age
+#         Employee.empcount += 1
+#         print("Name = ", name, ", Age:- ", age)
+#         print("Employee count is = ", Employee.empcount)
+
+
+# e1 = Employee("Shubham", 1090)
+# e2 = Employee("Kanak")
+# e3 = Employee("Raghav", 24)
+
+#the attributes defined directly inside the __init__() function - Instance attributes
+#the attributes defined inside the class but outside the __init__() function - Class attributes
+
+#can be accessed by object name/object only - Instance attributesxccx
+#can be accessed by object and class name - class attributes
+
+#value of attributes cannot be shared among the other objects - Instance attributes
+#value of attributes can be shared among the other objects - class attributes
+
+#changes made to instance attribute affects only the object within which it is defined - Instance attributes
+#changes made to class attrubute affects all the object of the given class - Class attributes
+
+#Methods - functions defined to perform a dedicated activity/operations. Methods are devided into 3 catogories
+#1. Class Methods    2. Instance Method - they have access to class and instance attributes
+#3. Static Methods
+
+# class Employee:
+#     empCount = 0
+#     def __init__(self, name = "Akash", age = 30):
+#         self.name = name
+#         self.age = age
+#         Employee.empCount += 1
+
+#     @classmethod
+#     def showCount(self):
+#         print(self.empCount)
+
+#     @classmethod
+#     def newEmployee(self, name, age):
+#         print(self(name, age))
+
+#     #counter = classmethod(showCount)
+
+# e1 = Employee("Kunal", 24)
+# #e1.showCount()
+# e2 = Employee("Raghav", 27)
+# e3 = Employee("Shubham", 89)
+#e1.showCount()
+#Employee.showCount(e1)
+#Employee.showCount()
+#--------------------------------------------------------------------------------------
+# class Employee:
+#     empCount = 0
+#     def __init__(self, name = "Akash", age = 30):
+#         self.name = name
+#         self.age = age
+#         #self(name, age)
+#         Employee.empCount += 1
+
+#     def Employee(self):
+#         print("This is Employee function", self.name)
+
+#     @classmethod
+#     def showCount(self):
+#         print(self.empCount)
+
+#     @classmethod
+#     def newEmployee(self, name, age):
+#         return self(name, age)
+
+# e1 = Employee("Kunal", 24)
+# e2 = Employee("Raghav", 27)
+# e3 = Employee("Shubham", 89)
+# e4 = Employee.newEmployee("Yashika", 27373277)
+# #e1.Employee()
+# Employee.showCount()
+
+# class Raghav:
+#     money = 400000 #class attribute
+
+#     @classmethod
+#     def showMoney(kunal):
+#         return kunal.money
+    
+# print(Raghav.showMoney())
