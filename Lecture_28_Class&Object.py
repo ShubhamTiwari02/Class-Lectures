@@ -224,7 +224,7 @@ print(s1.hidden_variable)
 #         print("This is Employee function", self.name)
 
 #     @classmethod
-#     def showCount(self):
+#     def showCount(cls):
 #         print(self.empCount)
 
 #     @classmethod
@@ -246,3 +246,40 @@ print(s1.hidden_variable)
 #         return kunal.money
     
 # print(Raghav.showMoney())
+
+
+#---------------------------------- Constructors --------------------------------------------
+#Its a instance method in a class, automatically called whenever a new object of the class is created.
+#its role is to assign value to the instance variable as soon as object is created. It needs a mandatory argument "self"
+
+#Types - Default, Parameterized Constructor
+
+# class Employee:
+#     def __init__(self):   #default constructor
+#         self.name = "Bhawana"
+#         self.age = 30
+#         self.salary = 50000
+
+# e1 = Employee()
+# e2 = Employee()
+# e3 = Employee()
+# print(e3.name)
+# print(e1.age)
+# print(e2.salary)
+
+# class Employee:
+#     def __init__(self, name, age, salary = 30000):   #parameterized constructor
+#         self.name = name
+#         self.age = age
+#         self.salary = salary   
+#     def display(self):
+#         print("Name:", self.name, " Age:", self.age, " Salary:", self.salary)
+
+# e1 = Employee("Akash", 23, 60000)
+# e2 = Employee("Raghav", 34, 70000)
+# e3 = Employee("Siri", 65)   #salary will take default value
+# e1.display()
+# e2.display()    
+# e3.display()  
+
+#Multiple Constructors - Not possible in python, but we can achieve it by using default arguments or by using class method as an alternative constructor
